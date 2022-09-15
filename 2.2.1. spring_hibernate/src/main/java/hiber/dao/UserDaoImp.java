@@ -42,19 +42,6 @@ public class UserDaoImp implements UserDao {
               .setParameter("series", series)
               .setMaxResults(1).getSingleResult();
       return userByParams;
-//      Session session = sessionFactory.openSession();
-//      session.beginTransaction();
-//
-//      List<User> users = session.createQuery("from User where car.model = :model and  car.series = :series")
-//              .setParameter("model", model)
-//              .setParameter("series", series)
-//              .list();
-//
-//      if (users.size() != 0) {
-//         return users.get(0);
-//      }
-//
-//      return null;
    }
 
 }
