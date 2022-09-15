@@ -78,13 +78,11 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return series == car.series && Objects.equals(model, car.model);
+        return id == car.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(series, model);
+        return Objects.hash(id);
     }
-
-
 }
